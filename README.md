@@ -22,30 +22,18 @@ It satisfies all requirements from [docs.zkverify.io → Phase 2 Challenge](http
 ---
 
 ## 🧠 Workspace Layout
-
-zkVerify_solo/
-├── halo2_bn254_verifier
-│ ├── src
-│ │ └── lib.rs
-│ └── Cargo.toml
-├── pallets
-│ └── halo2-bn254-verifier
-│ ├── src
-│ │ └── lib.rs
-│ └── Cargo.toml
-├── target
-│ ├── debug
-│ │ ├── build
-│ │ ├── deps
-│ │ ├── examples
-│ │ └── incremental
-│ ├── wasm32-unknown-unknown
-│ │ ├── debug
-│ │ └── CACHEDIR.TAG
-│ └── CACHEDIR.TAG
-├── Cargo.lock
+zkverify-halo2-bn254-verifier/
 ├── Cargo.toml
-└── README.md
+├── README.md
+├── halo2_bn254_verifier/
+│ ├── Cargo.toml
+│ └── src/
+│ └── lib.rs
+└── pallets/
+└── halo2-bn254-verifier/
+├── Cargo.toml
+└── src/
+└── lib.rs
 
 
 ### 🏗 Crates
