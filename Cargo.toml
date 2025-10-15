@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "halo2_bn254_verifier",
+  "pallets/halo2-bn254-verifier",
+]
+resolver = "2"
+

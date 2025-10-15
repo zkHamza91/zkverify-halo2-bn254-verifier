@@ -1,0 +1,24 @@
+[package]
+name = "pallet-halo2-bn254-verifier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+frame-support = { version = "14.0.0", default-features = false }
+frame-system  = { version = "14.0.0", default-features = false }
+sp-std        = { version = "14.0.0", default-features = false }
+sp-io = { version = "15.0.0", default-features = false, features = ["disable_panic_handler"] }
+parity-scale-codec = { version = "3.6.5", default-features = false, features = ["derive"] }
+scale-info = { version = "2.11.3", default-features = false, features = ["derive"] }
+
+halo2_bn254_verifier = { path = "../../halo2_bn254_verifier", default-features = false }
+
+[features]
+default = []
+std = [
+  "frame-support/std",
+  "frame-system/std",
+  "sp-std/std",
+  "parity-scale-codec/std",
+  "scale-info/std",
+]
