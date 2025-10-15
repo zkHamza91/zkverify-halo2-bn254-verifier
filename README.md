@@ -58,3 +58,6 @@ cargo clean
 # Build for no_std (WASM target)
 cargo check -p pallet-halo2-bn254-verifier --target wasm32-unknown-unknown --no-default-features
 
+⚠️ Note: Native (x86_64) builds may display sp-runtime-interface alignment assertion errors (assert_eq_size!(usize, u32)).
+This behavior is expected for no_std pallets targeting wasm32-unknown-unknown and does not affect functionality or verification.
+
